@@ -1,0 +1,23 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+{% include "textbox.html" %}
+
+
+    
+<h3> you have been logged out <h3><br>
+    <div class="border-top pt-3">
+        <P>Thanks for spending some quality time with the Web site today.</P><br>
+        <a class="ml-2" href="{% url 'login' %}">Log in again</a>
+    </div>
+
+</div>
+
+<style>
+    .helptext {
+        visibility: hidden;
+    }
+</style>
+
+
+{% endblock content %}
